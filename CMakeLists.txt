@@ -26,7 +26,14 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
 # XG Library
 set(XG_SOURCES
+    lib/gfx/gfx.c
+    lib/gfx/gfx.h
+    lib/file/file.c
+    lib/file/file.h
+    lib/input/input.c
+    lib/input/input.h
     lib/os/os.c
+    lib/os/os.h
 )
 add_library(xg ${XG_SOURCES})
 
